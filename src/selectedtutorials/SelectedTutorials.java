@@ -32,5 +32,6 @@ public class SelectedTutorials {
         account.withdrawFunds(558.69);
         System.out.println("Your account balance is $" + account.printBalance());
         
+        BankAccount newAccount = new BankAccount(54321, 400.45, "Sally", "Petersen", "555-777-9999");
     }
 }

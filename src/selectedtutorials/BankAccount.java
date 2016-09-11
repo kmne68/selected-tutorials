@@ -20,6 +20,22 @@ public class BankAccount {
     
     private static DecimalFormat df2 = new DecimalFormat(".##");
     
+    
+    public BankAccount() {
+        
+        System.out.println("Empty constructor called.");
+    }
+    
+    public BankAccount(int accountNumber, double acountBalance, String firstName, String lastName, String phoneNumber) {
+        
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+    }
+    
+    
     public double addFunds(double deposit) {
         
         System.out.println("Your account balance is $" + df2.format(accountBalance));
