@@ -22,7 +22,7 @@ public class BankAccount {
     
     
     public BankAccount() {
-        
+    //   this(999999, 100.00, "default", "default", "default");
         System.out.println("Empty constructor called.");
     }
     
@@ -33,6 +33,11 @@ public class BankAccount {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
+    }
+    
+    
+    public BankAccount(String firstName, String lastName, String phone) {
+        this(99999, 100.00, firstName, lastName, phone);
     }
     
     

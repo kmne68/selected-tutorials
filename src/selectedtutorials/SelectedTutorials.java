@@ -33,5 +33,19 @@ public class SelectedTutorials {
         System.out.println("Your account balance is $" + account.printBalance());
         
         BankAccount newAccount = new BankAccount(54321, 400.45, "Sally", "Petersen", "555-777-9999");
+        
+        BankAccount myAccount = new BankAccount("Keith", "Emery", "No phone");
+        System.out.println("My info " + myAccount.printBalance());
+        
+        // Test VIP Customer
+        
+        VIPCustomer vip1 = new VIPCustomer();
+        VIPCustomer vip2 = new VIPCustomer("John", "jdoe@test.com");
+        VIPCustomer vip3 = new VIPCustomer("George", 12000.00, "georgie@test.com");
+        System.out.println("VIP #1: " + vip1.getCustomerEmail() + ", " + vip1.getCustomerName() + ", " + vip1.getCreditLimit());
+        
+        System.out.println("VIP #2: " + vip2.getCustomerEmail() + ", " + vip2.getCustomerName() + ", " + vip2.getCreditLimit());
+        
+        System.out.println("VIP #2: " + vip3.getCustomerEmail() + ", " + vip3.getCustomerName() + ", " + vip3.getCreditLimit());
     }
 }
