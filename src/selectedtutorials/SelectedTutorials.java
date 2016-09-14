@@ -4,6 +4,10 @@
  */
 package selectedtutorials;
 
+import inheritance.Animal;
+import inheritance.Dog;
+
+
 /**
  *
  * @author Keith
@@ -47,5 +51,10 @@ public class SelectedTutorials {
         System.out.println("VIP #2: " + vip2.getCustomerEmail() + ", " + vip2.getCustomerName() + ", " + vip2.getCreditLimit());
         
         System.out.println("VIP #2: " + vip3.getCustomerEmail() + ", " + vip3.getCustomerName() + ", " + vip3.getCreditLimit());
+        
+        
+        Animal animal = new Animal("Animal", 1, 1, 5, 5);
+        Dog dog = new Dog("Yorkie", 8, 28, 2, 4, 1, 20, "long silky");
+        dog.eat();
     }
 }
