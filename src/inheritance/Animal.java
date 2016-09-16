@@ -33,8 +33,8 @@ public class Animal {
     }
     
     
-    public void move() {
-        
+    public void move(int speed) {
+        System.out.println("Animal is moving at " + speed);
     }
     /**
      * @return the name
