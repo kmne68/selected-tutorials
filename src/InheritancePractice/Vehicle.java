@@ -53,7 +53,7 @@ public class Vehicle {
     }
     
     
-    public int getCurrentSpeed() {
+    public int getCurrentVelocity() {
         
         return currentVelocity;
     }
