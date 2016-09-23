@@ -19,28 +19,18 @@ public class PC {
         this.monitor = monitor;
         this.motherboard = motherboard;
     }
-
-    /**
-     * @return the theCase
-     */
-    public Case getTheCase() {
-        return theCase;
-    }
-
-    /**
-     * @return the monitor
-     */
-    public Monitor getMonitor() {
-        return monitor;
-    }
-
-    /**
-     * @return the motherboard
-     */
-    public Motherboard getMotherboard() {
-        return motherboard;
+    
+    
+    public void powerUp() {
+        
+        theCase.pressPowerButton();
+        drawLogo();
     }
     
     
-    
+    private void drawLogo() {
+        
+        monitor.drawPixelAt(1200, 50, "yellow");
+    }
+
 }
