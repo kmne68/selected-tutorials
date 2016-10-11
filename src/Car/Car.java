@@ -43,20 +43,20 @@ public class Car {
     
     public void startEngine() {
         
-        System.out.println("Engine is running");
+        System.out.println("Car engine is running");
     }
     
     
     public void accelerate() {
         
         speed++;
-        System.out.println("Your speed is increasing");
+        System.out.println("Car speed is increasing");
     }
     
     
     public void brake() {
         
         speed--;
-        System.out.println("Your speed is decreasing");
+        System.out.println("Car speed is decreasing");
     }
 }

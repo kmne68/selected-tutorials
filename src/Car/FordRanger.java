@@ -14,4 +14,10 @@ public class FordRanger extends Car {
         
         super("Rick", 4, 4, true);
     }
+    
+    @Override
+    public void accelerate() {
+        
+        System.out.println("The Ranger is accelerating");
+    }
 }

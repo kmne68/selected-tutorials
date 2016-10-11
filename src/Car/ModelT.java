@@ -15,4 +15,12 @@ public class ModelT extends Car {
         super("Blackie", 4, 4, true);
     }
         
+    /**
+     * Apply brakes for this model
+     */
+    @Override
+    public void brake() {
+        
+        System.out.println("Model T brakes engaged");
+    }
 }
