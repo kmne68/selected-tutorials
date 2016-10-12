@@ -33,7 +33,39 @@ public class Initial {
         
         long  longValue = 100L;
         System.out.println("Short = " + newShortValue + "\n" + "Long = " + longValue);
+
+    boolean gameOver = true;
+    int score = 5000;
+    int levelCompleted = 5;
+    int bonus = 300;
+    
+    if(score == 4000)
+        System.out.println("Your score was 5000.");
+    System.out.println("Your score was 4000.");
+    
+    if(score <= 5000 && score > 1000) {
+        System.out.println("Your score was less than 5000.");
+    }
+    else if(score < 1000) {
+        System.out.println("Your score was less than 1000.");
+    }else {
+        System.out.println("Got here with no score");
+    }
+       
+    if(gameOver == true) {
+        int finalScore = score + (levelCompleted * bonus);
+        System.out.println("Your final scroe was " + finalScore);
+    }
+                
+    int newScore = 10000;
+    int newLevelCompleted = 8;
+    boolean newGameOver = true;
+    int newBonus = 200;
+    
+    if(newGameOver) {
+        int finalScore = newScore + (newLevelCompleted * bonus);
+        System.out.println("Your final score was " + finalScore);
     }
     
-    
+    }
 }
