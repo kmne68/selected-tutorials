@@ -54,9 +54,9 @@ public class Car {
     }
     
     
-    public void brake() {
+    public String brake() {
         
         speed--;
-        System.out.println("Car speed is decreasing");
+        return "Car speed is decreasing";
     }
 }

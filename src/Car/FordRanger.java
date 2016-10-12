@@ -20,4 +20,9 @@ public class FordRanger extends Car {
         
         System.out.println("The Ranger is accelerating");
     }
+    
+    @Override
+    public String brake() {
+        return super.brake();
+    }
 }

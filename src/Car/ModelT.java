@@ -19,8 +19,8 @@ public class ModelT extends Car {
      * Apply brakes for this model
      */
     @Override
-    public void brake() {
+    public String brake() {
         
-        System.out.println("Model T brakes engaged");
+        return "Model T brakes engaged";
     }
 }
