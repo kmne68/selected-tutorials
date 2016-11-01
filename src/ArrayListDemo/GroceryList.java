@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  * @author Keith
  */
-public class ArrayListDemo {
+public class GroceryList {
     
     public static void main(String[] args) {
         
@@ -39,9 +39,21 @@ public class ArrayListDemo {
     }
     
     
-    public void removeGorceryItem(int position) {
+    public void removeGroceryItem(int position) {
         
         String theItem = groceryList.get(position);
         groceryList.remove(position);
+    }
+    
+    public String findItem(String searchItem) {
+
+    // boolean exists = groceryList.contains(searchItem);
+        int position = groceryList.indexOf(searchItem);
+        
+        if(position >= 0) {
+            return groceryList.get(position);
+        }
+        
+        return null;
     }
 }
