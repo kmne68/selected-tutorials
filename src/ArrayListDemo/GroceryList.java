@@ -12,12 +12,7 @@ import java.util.ArrayList;
  */
 public class GroceryList {
     
-    public static void main(String[] args) {
-        
-        
-    }
-    
-    private ArrayList<String> groceryList = new ArrayList<String>();
+    private ArrayList<String> groceryList = new ArrayList<>();
     
     public void addGroceryItem(String item) {
         
