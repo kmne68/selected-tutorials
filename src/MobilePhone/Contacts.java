@@ -10,4 +10,8 @@ package MobilePhone;
  */
 public class Contacts {
     
+    
+    public void printContactList() {
+        
+    }
 }
