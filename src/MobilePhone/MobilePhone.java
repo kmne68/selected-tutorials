@@ -59,22 +59,46 @@ public class MobilePhone {
     
     public static void addNewContact() {
         
+        System.out.print("Please enter the contact's information: ");
+        contacts.addContact(scanner.nextLine());
     }
     
     public static void updateContact() {
         
+        System.out.print("Contact name: ");
+        String contactName = scanner.nextLine();
+        System.out.print("Enter new number: ");
+        String newNumber = scanner.nextLine();
     }
     
     public static void removeContact() {
         
+        System.out.print("Enter contact name: ");
+        String contactName = scanner.nextLine();
+        contacts.removeContact(contactName);
     }
     
     public static void searchForContact() {
         
+        System.out.println("Contact to search for: ");
+        String searchItem = scanner.nextLine();
+        if(contacts.onFile(searchItem)) {
+            System.out.println("Found " + searchItem + " in list.");
+        }
+        else {
+            System.out.println(searchItem + " not found.");
+        }
     }
     
     public static void processArrayList() {
     
+        ArrayList<String> newArray = new ArrayList<String>();
+        newArray.addAll(contacts.getContacts());
+        
+        ArrayList<String> nextArray = new ArrayList<String>(contacts.getContacts());
+        
+        String[] myArray = new String[contacts.getContacts().size()];
+        myArray = contacts.getContacts().toArray(myArray);
     }        
     
     public static void printContactList() {
