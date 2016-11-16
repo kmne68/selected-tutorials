@@ -57,6 +57,21 @@ public class MobilePhone {
         }
     }
     
+    
+    public static void printInstructions() {
+        System.out.println("\nPress ");
+        System.out.println("\t 0 - To print choice options.");
+        System.out.println("\t 1 - To print the contact list.");
+        System.out.println("\t 2 - To add a contact to the list.");
+        System.out.println("\t 3 - To modify a contact to the list.");
+        System.out.println("\t 4 - To remove a contact from the list.");
+        System.out.println("\t 5 - To search for a contact in the list.");
+        System.out.println("\t 6 - To process the array.");
+        System.out.println("\t 7 - To quit the application.");
+        
+    }
+    
+    
     public static void addNewContact() {
         
         System.out.print("Please enter the contact's information: ");
@@ -104,9 +119,4 @@ public class MobilePhone {
     public static void printContactList() {
         
     }
-    
-    
-    public static void printInstructions() {
-            System.out.println("");
-    } 
 }
