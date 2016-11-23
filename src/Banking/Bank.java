@@ -62,7 +62,7 @@ public class Bank {
     public boolean listCustomers(String branchName, boolean showTransactions) {
         
         Branch branch = findBranch(branchName);
-        if(branch != null) 
+        if(branch != null) {
             System.out.println("Customer details for branch " + branch.getName());
             
             ArrayList<Customer> branchCustomers = branch.getCustomers();
@@ -78,9 +78,9 @@ public class Bank {
                 }
             }
             return false;
-    } else {
-    return false;
-
+        } else {
+        return false;
+        }
     }
     
     
