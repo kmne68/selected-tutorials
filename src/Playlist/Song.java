@@ -11,10 +11,11 @@ package Playlist;
 public class Song {
     
     private String title;
-    private int duration;
+    private double duration;
 
-    public Song(String title) {
+    public Song(String title, double duration) {
         this.title = title;
+        this.duration = duration;
     }
 
     public String getTitle() {
@@ -25,12 +26,17 @@ public class Song {
         this.title = title;
     }
 
-    public int getDuration() {
+    public double getDuration() {
         return duration;
     }
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+    
+    @Override
+    public String toString() {
+        return this.title + "; " + this.duration;
     }
     
     
