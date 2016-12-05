@@ -28,9 +28,11 @@ import java.util.ListIterator;
  */
 public class Main {
     
-    private static ArrayList<Album> albums;
+    private static ArrayList<Album> albums = new ArrayList<Album>();
     
     public static void main(String[] args) {
+        
+        
         
         Album album = new Album("Handel's Greatest Hits", "SLSO");
         album.addSong("Water Music", 4.6);
@@ -38,16 +40,16 @@ public class Main {
         album.addSong("Royal Fireworks Music", 13.5);
         album.addSong("Zadok the Priest", 4.1);
         album.addSong("Judas Maccabaeus", 52.1);
-        album.addSong("Messiah", 128.3);
+        album.addSong("Messiah", 128.3);        
+        albums.add(album);
         
-        albums.add(album);
-        album = new Album("Rockin' with Vivaldi", "SLSO");
-        album.addSong("Four Seasons Intro", 12.0);
-        album.addSong("Winter Concerto", 8.3);
-        album.addSong("Spring Concerto", 9.5);
-        album.addSong("Giustino", 8.7);
-        album.addSong("La Sena festeggiante", 10.3);
-        albums.add(album);
+        Album album2 = new Album("Rockin' with Vivaldi", "SLSO");
+        album2.addSong("Four Seasons Intro", 12.0);
+        album2.addSong("Winter Concerto", 8.3);
+        album2.addSong("Spring Concerto", 9.5);
+        album2.addSong("Giustino", 8.7);
+        album2.addSong("La Sena festeggiante", 10.3);
+        albums.add(album2);
         
         LinkedList<Song> playList = new LinkedList<Song>();
         albums.get(0).addToPlayList("Water Music", playList);
@@ -55,14 +57,14 @@ public class Main {
         albums.get(0).addToPlayList("Winter Concerto", playList);
         albums.get(1).addToPlayList("2", playList);
         albums.get(1).addToPlayList("4", playList);
-        albums.get(2).addToPlayList("1", playList);
+        albums.get(1).addToPlayList("1", playList);
         
         play(playList);
         
         
     }
     
-    private static void play(LinkedList<Song> playList) {
+    private static void play(ArrayList<Song> playList) {
         
         ListIterator<Song> listIterator = playList.listIterator();
         if(playList.size() == 0) {

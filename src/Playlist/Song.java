@@ -25,7 +25,7 @@ public class Song {
     public void setTitle(String title) {
         this.title = title;
     }
-
+/*
     public double getDuration() {
         return duration;
     }
@@ -33,7 +33,7 @@ public class Song {
     public void setDuration(int duration) {
         this.duration = duration;
     }
-    
+    */
     @Override
     public String toString() {
         return this.title + "; " + this.duration;
