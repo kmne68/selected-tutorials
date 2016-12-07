@@ -45,7 +45,7 @@ public class Album {
     }
     
     
-    public boolean addToPlaylList(int trackNumber, ArrayList<Song> playList) {
+    public boolean addToPlaylList(int trackNumber, LinkedList<Song> playList) {
         
         int index = trackNumber - 1;
         if((index > 0) && (index <= this.songs.size())) {
@@ -58,7 +58,7 @@ public class Album {
     }
     
     
-    public boolean addToPlayList(String title, ArrayList<Song> playList) {
+    public boolean addToPlayList(String title, LinkedList<Song> playList) {
         
         Song checkedSong = findSong(title);
         if(checkedSong != null) {
