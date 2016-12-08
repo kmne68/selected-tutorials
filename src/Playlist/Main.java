@@ -137,6 +137,12 @@ public class Main {
     
     private static void printMenu() {
         
-        
+        System.out.println("Available action:\npress");
+        System.out.println("0 - to quit\n" +
+                "1 - to play next song\n" +
+                "2 - to play previous song\n" +
+                "3 - to replay the current song\n" +
+                "4 - list songs in the playlist\n" +
+                "5 - print available actions");
     }
 }
