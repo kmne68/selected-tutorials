@@ -18,5 +18,12 @@ public class Main {
         kPhone.callPhone(555-5555);
         kPhone.answer();
         
+        kPhone = new MobilePhone(5554321);
+        kPhone.callPhone(555-1234);
+        kPhone.answer();
+        kPhone.callPhone(5554321);
+        kPhone.powerOn();
+        kPhone.callPhone(5554321);
+        
     }
 }
