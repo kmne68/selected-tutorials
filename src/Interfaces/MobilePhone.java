@@ -48,7 +48,7 @@ public class MobilePhone implements ITelephone {
         
         if(phoneNumber == myNumber && isOn) {
             isRinging = true;
-            System.out.println("Ring! Ring!");
+            System.out.println("Mobile Ring!");
         }
         else {
             isRinging = false;

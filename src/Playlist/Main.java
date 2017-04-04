@@ -7,6 +7,7 @@ package Playlist;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
 
@@ -30,7 +31,7 @@ import java.util.Scanner;
  */
 public class Main {
     
-    private static ArrayList<Album> albums = new ArrayList<Album>();
+    private static List<Album> albums = new ArrayList<Album>();
     
     public static void main(String[] args) {
         
@@ -53,7 +54,7 @@ public class Main {
         album2.addSong("La Sena festeggiante", 10.3);
         albums.add(album2);
         
-        LinkedList<Song> playList = new LinkedList<Song>();
+        List<Song> playList = new ArrayList<Song>();
         albums.get(0).addToPlayList("Water Music", playList);
         albums.get(1).addToPlayList("Magnificat", playList);
         albums.get(0).addToPlayList("Winter Concerto", playList);
@@ -66,7 +67,7 @@ public class Main {
         
     }
     
-    private static void play(LinkedList<Song> playList) {
+    private static void play(List<Song> playList) {
         
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
@@ -169,7 +170,7 @@ public class Main {
     }
     
     
-    private static void printList(LinkedList<Song> playList) {
+    private static void printList(List<Song> playList) {
         
         Iterator<Song> iterator = playList.iterator();
         System.out.println("==============================");
