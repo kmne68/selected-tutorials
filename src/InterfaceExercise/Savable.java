@@ -13,6 +13,6 @@ import java.util.ArrayList;
  */
 public interface Savable {
     
-    public ArrayList savedValues();
-    public void populateFields(ArrayList values);
+    public ArrayList write();
+    public void savedValues(ArrayList values);
 }

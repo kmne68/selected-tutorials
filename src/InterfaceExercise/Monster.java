@@ -14,13 +14,19 @@ import java.util.ArrayList;
 public class Monster implements Savable {
 
     @Override
-    public ArrayList savedValues() {
+    public ArrayList write() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void populateFields(ArrayList values) {
+    public void savedValues(ArrayList values) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public String toString() {
+        System.out.println("Monster detail: ");
+        return null;
     }
     
 }
