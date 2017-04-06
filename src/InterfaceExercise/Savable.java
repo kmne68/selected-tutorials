@@ -5,7 +5,7 @@
  */
 package InterfaceExercise;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,6 +13,6 @@ import java.util.ArrayList;
  */
 public interface Savable {
     
-    public ArrayList write();
-    public void savedValues(ArrayList values);
+    public List<String> write();
+    public void read(List<String> values);
 }

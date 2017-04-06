@@ -11,6 +11,8 @@ import java.util.ArrayList;
  *
  * @author Keith
  */
+
+/*
 public class Monster implements Savable {
 
     @Override
@@ -19,7 +21,7 @@ public class Monster implements Savable {
     }
 
     @Override
-    public void savedValues(ArrayList values) {
+    public void read(ArrayList values) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
@@ -28,5 +30,5 @@ public class Monster implements Savable {
         System.out.println("Monster detail: ");
         return null;
     }
-    
-}
+   
+}*/ 
