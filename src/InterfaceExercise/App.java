@@ -23,8 +23,13 @@ public class App {
         System.out.println(me);
         me.setWeapon("Orcrist");
         saveObject(me);
-        loadObject(me);
+    //    loadObject(me);
         System.out.println(me);
+        
+        Savable werewolf = new Monster("Werewolf", 20, 40);
+        System.out.println("Strength = " + ((Monster) werewolf).getStrength());
+        System.out.println(werewolf);
+        saveObject(werewolf);
     }
     
     public void saveValues(Savable entity) {
