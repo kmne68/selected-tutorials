@@ -18,6 +18,7 @@ public class Main {
     
     public static void main(String[] args) {
         
+        /*
         class ClickListener implements Button.OnClickListener {
             public ClickListener() {        
                 System.out.println("I've been attached.");
@@ -31,6 +32,13 @@ public class Main {
         }
             
         btnPrint.setOnClickListener(new ClickListener());
+        */
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(String title) {
+                System.out.println(title + " was clicked.");
+            }
+        });
         listen();
     }
     
