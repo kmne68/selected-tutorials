@@ -14,5 +14,5 @@ import java.util.List;
 public interface Savable {
     
     public List<String> write();
-    public void read(List<String> values);
+    public void read(List<String> savedValues);
 }
