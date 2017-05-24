@@ -9,16 +9,7 @@ package Abstraction;
  *
  * @author Keith
  */
-public class Parrot extends Bird {
+public interface CanFly {
     
-    public Parrot(String name) {
-        super(name);
-    }
-    
-    /*
-    @Override
-    public void fly() {
-        System.out.println("I'm falling with style.");
-    }
-    */
+    void fly();
 }
