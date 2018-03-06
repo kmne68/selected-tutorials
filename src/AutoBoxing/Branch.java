@@ -67,6 +67,10 @@ public class Branch {
         }
         return null;
     }
+   
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
     
     public void openAccount(int deposit) {
         
