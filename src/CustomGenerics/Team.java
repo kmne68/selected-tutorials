@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Keith
  */
-public class Team<T extends Player> implements Comparable<Team<T>> {
+public class Team {
     
     private String name;
     int played = 0;
@@ -31,11 +31,11 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
     
     public boolean addPlayer(Player player) {
         if(members.contains(player)) {
-            System.out.println(player.getName() + " is alread on this team.");
+            System.out.println(player.getName());
             return false;
         } else {
             members.add(player);
-            System.out.println(player.getName() + " picked for team " + this.name);
+            System.out.println(player.getName());
             return true;
         }
     }
@@ -44,23 +44,16 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
         return this.members.size();
     }
     
-    public void matchResult(Team<T> opponent, int ourScore, int theirScore) {
-        
-        String message;
-        
+    public void matchResult(Team opponent, int ourScore, int theirScore) {
         if(ourScore > theirScore) {
             won++;
-            message = " beat ";
         } else if (ourScore == theirScore) {
             tied++;
-            message = " drew with ";
         } else {
             lost++;
-            message = " lost to ";
         }
         played++;
         if(opponent != null) {
-            System.out.println(this.getName() + message + opponent.getName());
             opponent.matchResult(null, theirScore, ourScore);
         }
     }
@@ -68,18 +61,5 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
     
     public int ranking() {
         return (won * 2) + tied;
-    }
-    
-    
-    public int compareTo(Team<T> team) {
-        
-        if(this.ranking() > team.ranking()) {
-            return -1;
-        } else if (this.ranking() < team.ranking()) {
-            return 1;
-        } else {
-            return 0;
-        }
-        
     }
 }
