@@ -19,4 +19,8 @@ public class Mammal extends Animal{
         super(age, gender, weightInKg);
     }
     
+    
+    public void move() {
+        System.out.println("Mammal is walking.");
+    }
 }

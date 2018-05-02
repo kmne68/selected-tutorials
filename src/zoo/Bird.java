@@ -9,7 +9,7 @@ package zoo;
  *
  * @author Keith
  */
-public class Bird extends Animal{
+public class Bird extends Animal {
     
     private int age;
     private String gender;
@@ -20,8 +20,8 @@ public class Bird extends Animal{
         super(age, gender, weightInKg);
     }
     
-    public void fly() {
-        System.out.println("Flying...");                
+    public void move() {
+        System.out.println("Bird is flapping its wings.");
     }
     
 }

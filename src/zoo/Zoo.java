@@ -17,6 +17,7 @@ public class Zoo {
         Mammal bear = new Mammal(3, "female", 325);
         Fish fish = new Fish(1, "female", 5);
         Bird gandalf = new Bird(3, "female", 1);
+        Sparrow sparrow = new Sparrow(1, "male", 1);
         
         System.out.println("Elephant is ");
         elephant.eat();
@@ -25,6 +26,26 @@ public class Zoo {
         System.out.println("Fish is ");
         fish.swim();
         System.out.println("Gandalf is ");
-        gandalf.fly();
+        sparrow.fly();
+        System.out.println("Fish is ");
+        fish.sleep();
+        System.out.println("Gandalf is ");
+        gandalf.eat();
+        
+        Chicken sam = new Chicken(2, "female", 2);
+        System.out.println("Sam the chicken is...");
+        
+        sam.move();
+        fish.move();
+        
+        moveAnimal(gandalf);
+        moveAnimal(fish);
+        moveAnimal(bear);
+
+        }
+    
+    public static void moveAnimal(Animal animal) {
+        animal.move();
     }
+    
 }
