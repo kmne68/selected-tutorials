@@ -13,13 +13,20 @@ public class Series {
     
     public static int nSum(int n) {
         
-        int sum = 0;
+    //    int sum = 0;
         
-        for(int i = 0; i <= n; i++) {
-            sum += i;
+        if(n == 0) {
+            return 0;
+        } else {
+            return n + nSum(n - 1);
         }
         
-        return sum;
+        
+//        for(int i = 0; i <= n; i++) {
+//            sum += i;
+//        }
+        
+//        return sum;
     }
     
 }
