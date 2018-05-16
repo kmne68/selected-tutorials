@@ -29,4 +29,32 @@ public class Series {
 //        return sum;
     }
     
+    public static int factorial(int n) {
+        
+        int result;
+        // basecase 0
+        if (n == 0) {
+            return 1;
+        }
+        result = n * factorial(n - 1);
+        
+        return result;
+    }
+    
+    
+    public static int fibonacci (int n) {
+        
+        int result;
+        
+        if(n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return 1;
+        }
+                
+        result = fibonacci(n - 1) + fibonacci(n - 2);
+        
+        return result;
+        
+    }
 }
