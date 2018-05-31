@@ -11,7 +11,7 @@ package seriesfunctions;
  */
 public class Series {
     
-    public static int nSum(int n) {
+    public static long nSum(int n) {
         
     //    int sum = 0;
         
@@ -29,9 +29,9 @@ public class Series {
 //        return sum;
     }
     
-    public static int factorial(int n) {
+    public static long factorial(int n) {
         
-        int result;
+        long result;
         // basecase 0
         if (n == 0) {
             return 1;
@@ -42,9 +42,9 @@ public class Series {
     }
     
     
-    public static int fibonacci (int n) {
+    public static long fibonacci (int n) {
         
-        int result;
+        long result;
         
         if(n == 0) {
             return 0;

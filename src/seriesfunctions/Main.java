@@ -13,11 +13,13 @@ public class Main {
     
     public static void main (String[] args) {
         
-        System.out.println(Series.nSum(10));
-        
-        System.out.println(Series.factorial(10));
-        
-        System.out.println(Series.fibonacci(10));
+        for(int i = 0; i <= 10; i++) {
+            System.out.println("Sum first " + i + " digits is: " + Series.nSum(i));
+            
+            System.out.println("Factorial first " + i + " digits is: " + Series.factorial(i));
+            
+            System.out.println("Fibonacci first " + i + " digits is: " + Series.fibonacci(i));
+        }
     }
     
 }
